@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MathComplexTestSuite">
+    <test name="BugDetectTest">
+        <parameter name="r1" value="1.0"/>
+        <parameter name="i1" value="2.0"/>
+        <parameter name="r2" value="3.0"/>
+        <parameter name="i2" value="4.0"/>
+        <parameter name="expReal" value="-5.0"/>
+        <parameter name="expImaginary" value="10.0"/>
+
+        <classes>
+            <class name="org.apache.commons.math3.complex.ComplexTestNG"/>
+        </classes>
+    </test>
+</suite>
